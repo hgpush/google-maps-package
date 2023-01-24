@@ -12,8 +12,8 @@ let package = Package(
         .library(name: "GoogleMaps", targets: ["GoogleMaps"]),
     ],
     dependencies: [
-    	.package(name: "GoogleMapsBase", url: "https://github.com/hgpush/google-maps-base.git")
-    	.package(name: "GoogleMapsCore", url: "https://github.com/hgpush/google-maps-core.git")
+    	.package(name: "GoogleMapsBase", url: "https://github.com/hgpush/google-maps-base.git", "main")
+    	.package(name: "GoogleMapsCore", url: "https://github.com/hgpush/google-maps-core.git", "main")
     ]
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
@@ -22,6 +22,6 @@ let package = Package(
             name: "GoogleMaps",
             dependencies: ["GoogleMapsBase", "GoogleMapsCore"],
             path: "Sources/GoogleMapsSPM/GoogleMaps.xcframework"
-		),
+		),	
     ]
 )

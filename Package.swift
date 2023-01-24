@@ -25,7 +25,10 @@ let package = Package(
 			.target(
 				name: "GoogleMapsDeps",
 				dependencies: ["GoogleMapsBase", "GoogleMapsCore"],
-				path: "GoogleMapsDeps"
+				path: "GoogleMapsDeps",
+				resources: [
+					.copy("Sources/GoogleMapsSPM/GoogleMaps.xcframework/ios-arm64_x86_64-simulator/GoogleMaps.framework/Resources/GoogleMaps.bundle")
+				]
 			)
     ]
 )

@@ -9,7 +9,7 @@ let package = Package(
 		platforms: [.iOS(.v13)],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
-        .library(name: "GoogleMapsPackage", targets: ["GoogleMaps", "GoogleMapsDeps"]),
+			.library(name: "GoogleMapsPackage", type: .dynamic, targets: ["GoogleMaps", "GoogleMapsDeps"]),
     ],
     dependencies: [
 			.package(name: "GoogleMapsBase", url: "https://github.com/hgpush/google-maps-base.git", branch: "main"),

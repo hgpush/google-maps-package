@@ -24,7 +24,7 @@ let package = Package(
 			),
 			.target(
 				name: "GoogleMapsDeps",
-				dependencies: ["GoogleMapsBase", "GoogleMapsCore"],
+				dependencies: ["google-maps-base", "google-maps-core"],
 				path: "GoogleMapsDeps"
 			)
     ]

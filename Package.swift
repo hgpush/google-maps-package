@@ -25,9 +25,8 @@ let package = Package(
 			.target(
 				name: "GoogleMapsDeps",
 				dependencies: ["GoogleMapsBase", "GoogleMapsCore"],
-				path: "GoogleMapsDeps",
 				resources: [
-					.copy("GoogleMapsDeps/GoogleMaps.bundle")
+					.copy("GoogleMaps.bundle")
 				]
 			)
     ]

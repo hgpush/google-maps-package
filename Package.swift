@@ -33,7 +33,8 @@ let package = Package(
 			sources: ["empty.swift"],
 			resources: [
 				.copy("Resources/GoogleMaps.bundle")
-			]
+			],
+			publicHeadersPath: "Sources"
 		)
 	]
 )

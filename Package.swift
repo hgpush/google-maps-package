@@ -34,7 +34,7 @@ let package = Package(
 			resources: [
 				.copy("Resources/GoogleMaps.bundle")
 			],
-			publicHeadersPath: "Sources"
+      publicHeadersPath: "Headers"
 		)
 	]
 )

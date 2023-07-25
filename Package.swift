@@ -30,7 +30,7 @@ let package = Package(
 		  		.product(name: "GoogleMapsCore", package: "google-maps-core"),
 				"GoogleMaps"
 			],
-			sources: ["empty.swift"],
+			sources: ["dummy.m"],
 			resources: [
 				.copy("Resources/GoogleMaps.bundle")
 			],

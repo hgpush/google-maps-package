@@ -25,9 +25,13 @@ let package = Package(
 			),
 			.target(
 				name: "GoogleMapsDeps",
-				dependencies: ["GoogleMapsBase", "GoogleMapsCore"],
+				dependencies: [
+          .product(name: "GoogleMapsBase", package: "google-maps-base"),
+          .product(name: "GoogleMapsCore", package: "google-maps-core")
+        ],
+        sources: ["empty.swift"],
 				resources: [
-					.copy("Sources/Resources/GoogleMaps.bundle")
+					.copy("Resources/GoogleMaps.bundle")
 				]
 			)
     ]

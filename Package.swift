@@ -20,14 +20,15 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
 			.binaryTarget(
 					name: "GoogleMaps",
-					path: "Sources/GoogleMapsSPM/GoogleMaps.xcframework"
+					url: "https://github.com/hgpush/google-maps-package/releases/download/1.0.0/GoogleMaps.xcframework.zip",
+					checksum: "d1b06fcd340cf9b10be3f0a659c6c83de28f8e2ceb8fa53df42cbcc22f345fde"
 			),
 			.target(
 				name: "GoogleMapsDeps",
 				dependencies: ["GoogleMapsBase", "GoogleMapsCore"]
-//				resources: [
-//					.copy("GoogleMaps.bundle")
-//				]
+				resources: [
+					.copy("Sources/Resources/GoogleMaps.bundle")
+				]
 			)
     ]
 )

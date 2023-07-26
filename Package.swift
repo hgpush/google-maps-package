@@ -20,8 +20,8 @@ let package = Package(
     // Targets can depend on other targets in this package, and on products in packages this package depends on.
     .binaryTarget(
       name: "GoogleMaps",
-      url: "https://github.com/hgpush/google-maps-package/releases/download/1.0.0/GoogleMaps.xcframework.zip",
-      checksum: "d1b06fcd340cf9b10be3f0a659c6c83de28f8e2ceb8fa53df42cbcc22f345fde"
+      url: "https://github.com/hgpush/google-maps-package/releases/download/1.0.1/GoogleMaps_3p.xcframework.zip",
+      checksum: "93cc594719cdfcc993e7e6fa06fa989f033fd412f92b0c8e2b148ff7a2b6fb9c"
     ),
     .target(
       name: "GoogleMapsTarget",

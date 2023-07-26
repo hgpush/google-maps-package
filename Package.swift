@@ -9,7 +9,9 @@ let package = Package(
 	platforms: [.iOS(.v14)],
     	products: [
         	// Products define the executables and libraries a package produces, and make them visible to other packages.
-        .library(name: "GoogleMaps", type: .dynamic, targets: ["GoogleMapsPackage"]),
+        .library(name: "GoogleMaps", targets: ["GoogleMapsPackage"]),
+        .library(name: "GoogleMapsBase", targets: ["GoogleMapsBasePackage"]),
+        .library(name: "GoogleMapsCore", targets: ["GoogleMapsCorePackage"]),
     	],
 	dependencies: [
 	],
@@ -34,9 +36,7 @@ let package = Package(
 		.target(
 			name: "GoogleMapsPackage",
 			dependencies: [
-        "GoogleMapsBase",
 				"GoogleMaps",
-        "GoogleMapsCore"
 			],
       path: "GoogleMaps",
 			sources: ["dummy.m"],
@@ -44,6 +44,24 @@ let package = Package(
 				.copy("Resources/GoogleMaps.bundle")
       ],
       publicHeadersPath: "Sources"
-		)
+		),
+    .target(
+      name: "GoogleMapsBasePackage",
+      dependencies: [
+        "GoogleMapsBase",
+      ],
+      path: "GoogleMaps",
+      sources: ["dummy.m"],
+      publicHeadersPath: "Sources"
+    ),
+    .target(
+      name: "GoogleMapsCorePackage",
+      dependencies: [
+        "GoogleMapsCore"
+      ],
+      path: "GoogleMaps",
+      sources: ["dummy.m"],
+      publicHeadersPath: "Sources"
+    )
 	]
 )

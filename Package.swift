@@ -50,7 +50,7 @@ let package = Package(
       dependencies: [
         "GoogleMapsBase",
       ],
-      path: "GoogleMaps",
+      path: "GoogleMapsBase",
       sources: ["dummy.m"],
       publicHeadersPath: "Sources"
     ),
@@ -59,7 +59,7 @@ let package = Package(
       dependencies: [
         "GoogleMapsCore"
       ],
-      path: "GoogleMaps",
+      path: "GoogleMapsCore",
       sources: ["dummy.m"],
       publicHeadersPath: "Sources"
     )

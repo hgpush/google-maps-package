@@ -31,7 +31,7 @@ let package = Package(
     .binaryTarget(
         name: "GoogleMapsBase",
         url: "https://github.com/hgpush/google-maps-package/releases/download/1.0.1/GoogleMapsBase_3p.xcframework.zip",
-        checksum: "af10b10661a5ee4d476050239573cfe2abc6e1148c14de650a88606e20aefe94"
+        checksum: "fb442c629d3b304d006b3075625162a77c91f61fd0a19071be46308fecbaa50b"
     ),
 		.target(
 			name: "GoogleMapsPackage",

@@ -31,11 +31,11 @@ let package = Package(
 				"GoogleMaps"
 			],
       path: "GoogleMapsTarget",
-			// sources: ["dummy.m"],
+			sources: ["dummy.m"],
 			resources: [
 				.copy("Resources/GoogleMaps.bundle")
 			]
-      // publicHeadersPath: "Sources"
+      			publicHeadersPath: "Sources"
 		)
 	]
 )
